@@ -1,6 +1,6 @@
 # The-Box (In Construction)
 ## Introduction
-<img src="https://ai.github.io/size-limit/logo.svg" align="right"
+<img src="Images/temp_box_logo.png" align="right"
      alt="Size Limit logo by Anton Lovchikov" width="120" height="178">
 The Box is a dynamic, isometric stacking title that spontaneously changes as the user progresses through the game. 
 The player loses when they fail to stack a box. Have fun trying to achieve the highest score possible! 
