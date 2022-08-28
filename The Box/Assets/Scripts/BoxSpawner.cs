@@ -39,6 +39,7 @@ public class BoxSpawner : MonoBehaviour
             timer = 0.0f;
             nextTime = Random.Range(minSpawnTime, maxSpawnTime);
         }
+
     }
 
     // Generates a float value between the left and right barriers

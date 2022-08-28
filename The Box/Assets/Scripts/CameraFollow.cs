@@ -1,12 +1,23 @@
-﻿/* using UnityEngine;
+﻿using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
-    [SerializeField] private GameObject target;
+   public Transform target;
+   public float smoothTime = 0.3f;
 
+   private Vector3 velocity = Vector3.zero;
+   public float baseCamVal_Z = -1.0f;
 
-    void LateUpdate() {
-        transform.position.z += target.position.z;
-    }
+   void Awake() {
+      baseCamVal_Z = transform.position.z;
+   }
+
+   void FixedUpdate() {
+      Vector3 foo = new Vector3(transform.position.x, transform.position.y, target.position.z + baseCamVal_Z);
+
+      transform.position = Vector3.SmoothDamp(transform.position, foo, ref velocity, smoothTime);
+
+      //transform.LookAt(target);
+   }
 }
- */
+ 
